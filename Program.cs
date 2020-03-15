@@ -25,15 +25,10 @@ namespace AssigningStudentExercisesWithLINQ
                     CurrentExercises = new List<Exercises>()
                     {
                         new Exercises()
-                            {
-                                NameOfExercise = "LINQ",
-                                    LanguageOfExercise = "C#"
-                            },
-                            new Exercises()
-                            {
-                                NameOfExercise = "Kennel",
-                                    LanguageOfExercise = "JS"
-                            }
+                        {
+                            NameOfExercise = "Kennel",
+                                LanguageOfExercise = "JS"
+                        }
                     }
 
             });
@@ -45,10 +40,15 @@ namespace AssigningStudentExercisesWithLINQ
                     CurrentExercises = new List<Exercises>()
                     {
                         new Exercises()
-                        {
-                            NameOfExercise = "Kennel",
-                                LanguageOfExercise = "JS"
-                        }
+                            {
+                                NameOfExercise = "Kennel",
+                                    LanguageOfExercise = "JS"
+                            },
+                            new Exercises()
+                            {
+                                NameOfExercise = "LINQ",
+                                    LanguageOfExercise = "C#"
+                            }
                     }
             });
             students.Add(new Student
@@ -56,6 +56,20 @@ namespace AssigningStudentExercisesWithLINQ
                 StudentCohort = cohort35,
                     FirstName = "Tyler",
                     LastName = "Davis"
+            });
+            students.Add(new Student
+            {
+                StudentCohort = cohort37,
+                    FirstName = "Akemo",
+                    LastName = "Wright",
+                    CurrentExercises = new List<Exercises>()
+                    {
+                        new Exercises()
+                        {
+                            NameOfExercise = "NBA",
+                                LanguageOfExercise = "JS"
+                        }
+                    }
             });
 
             var exercises = new List<Exercises>
@@ -74,6 +88,11 @@ namespace AssigningStudentExercisesWithLINQ
                 {
                 LanguageOfExercise = "JS",
                 NameOfExercise = "Nutshell"
+                },
+                new Exercises
+                {
+                LanguageOfExercise = "JS",
+                NameOfExercise = "NBA"
                 },
             };
 
